@@ -68,104 +68,51 @@ header {
 }
 
 .search-section {
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
-.search-section input {
-  width: 70%;
-  max-width: 400px;
-  padding: 10px;
-  border-radius: 25px 0 0 25px;
+.search-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #1a1a1a;
+  border: 2px solid #00ffee;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 0 20px #00ffee44;
+}
+
+.search-wrapper input {
+  flex: 1;
+  padding: 15px 20px;
   border: none;
   outline: none;
+  background: transparent;
   font-size: 1rem;
+  color: #fff;
 }
 
-.search-btn {
-  padding: 10px 20px;
-  border: none;
-  background: #00ffee;
-  color: #000;
-  font-weight: bold;
-  font-size: 1rem;
-  border-radius: 0 25px 25px 0;
-  cursor: pointer;
-  transition: 0.3s;
-  box-shadow: 0 0 10px #00ffee55;
-}
-
-.search-btn:hover {
-  background: #00ccbb;
-}
-
-.slider-container {
-  position: relative;
-  overflow: hidden;
-  margin: 30px 20px;
-}
-
-.slider-wrapper {
-  overflow: hidden;
-}
-
-.slider {
-  display: flex;
-  transition: transform 0.5s ease;
-  gap: 20px;
-  width: max-content;
-}
-
-.slide-item {
-  min-width: 160px;
-  text-align: center;
-  color: white;
-  text-decoration: none;
-}
-
-.slide-item img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 0 10px #00ffee44;
-  transition: transform 0.3s;
-}
-
-.slide-item p {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #00ffee;
-}
-
-.slide-item:hover img {
-  transform: scale(1.05);
-}
-
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.search-wrapper button {
+  padding: 15px 25px;
   background-color: #00ffee;
   color: #000;
   border: none;
-  padding: 10px 15px;
-  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
-  font-size: 20px;
-  z-index: 1;
-  box-shadow: 0 0 10px #00ffee88;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
-.slider-btn:hover {
+.search-wrapper button:hover {
   background-color: #00ccbb;
 }
 
-.slider-btn.left {
-  left: 10px;
-}
-
-.slider-btn.right {
-  right: 10px;
+#search-result {
+  margin-top: 20px;
+  color: #00ffee;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {
