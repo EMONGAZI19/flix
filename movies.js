@@ -18,7 +18,6 @@ const movies = {
   ],
   banglaMovies: [
     { title: 'Bangla Movie 1', image: 'bangla1.jpg' },
-    { title: 'Bangla Movie 2', image: 'bangla2.jpg' },
     // Add more movies here...
   ],
   hindiDubbedMovies: [
