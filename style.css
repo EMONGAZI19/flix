@@ -3,63 +3,43 @@
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
   background: linear-gradient(135deg, #000000, #1a1a1a, #000000);
   font-family: 'Roboto', sans-serif;
   color: white;
 }
 
 /* Header */
-.site-header {
-  width: 100%;
-  padding: 15px 30px;
+.main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 30px;
   background-color: #000;
   box-shadow: 0 0 10px #00ffee33;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
 .logo {
   font-size: 1.6rem;
   font-weight: bold;
   color: #00ffee;
-  text-decoration: none;
   font-family: 'Orbitron', sans-serif;
 }
 
-.header-icons {
-  display: flex;
-  gap: 20px;
-}
-
-.header-icons .icon {
-  font-size: 1.4rem;
+.menu {
+  font-size: 1.1rem;
   color: #00ffee;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.header-icons .icon:hover {
-  color: #00ccbb;
-  text-shadow: 0 0 10px #00ffee99;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 /* Notice Bar */
 .notice-bar {
   background-color: #111;
   padding: 10px;
-  color: #00ffee;
-  font-size: 1rem;
-  font-weight: bold;
   border-top: 1px solid #333;
   border-bottom: 1px solid #333;
   display: flex;
   align-items: center;
-  overflow: hidden;
 }
 
 .notice-label {
@@ -75,21 +55,9 @@ body {
 .notice-marquee {
   flex: 1;
   overflow: hidden;
-  position: relative;
 }
 
-.scroll-text {
-  display: inline-block;
-  white-space: nowrap;
-  position: absolute;
-  animation: scroll-left 18s linear infinite;
-}
-
-@keyframes scroll-left {
-  0% {
-    left: 100%;
-  }
-  100% {
-    left: -100%;
-  }
+.notice-marquee marquee {
+  color: #00ffee;
+  font-weight: bold;
 }
