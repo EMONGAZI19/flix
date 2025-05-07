@@ -4,21 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Drama World</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- Header -->
   <header>
-    <div class="logo">My Drama World</div>
-    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-    <ul class="menu" id="menu">
-      <li><a href="#">হোম</a></li>
-      <li><a href="#">মুভি রিকুয়েস্ট</a></li>
-      <li><a href="#">যোগাযোগ</a></li>
-      <li><a href="#">প্রাইভেসি পলিসি</a></li>
-      <li><a href="#">আমাদের সম্পর্কে</a></li>
-    </ul>
+    <a href="#" class="logo">My Drama World</a>
+    <div id="menuToggle" class="menu-icon">&#9776;</div>
+    <nav id="navMenu" class="nav-menu">
+      <a href="#">হোম</a>
+      <a href="#">মুভি রিকুয়েস্ট</a>
+      <a href="#">যোগাযোগ</a>
+      <a href="#">প্রাইভেসি</a>
+      <a href="#">আমাদের সম্পর্কে</a>
+    </nav>
   </header>
 
   <!-- Notice Bar -->
@@ -26,20 +26,27 @@
     <div class="notice-label">নোটিশ:</div>
     <div class="notice-marquee">
       <marquee behavior="scroll" direction="left" scrollamount="5">
-        নতুন মুভি প্রতিদিন আপডেট করা হয়! আজকের আপলোড: 'New Korean Drama EP12', 'Hindi Dubbed Thriller', আরও চেক করুন...
+        নতুন মুভি প্রতিদিন আপডেট করা হয়! আজকের আপলোড: 'New Korean Drama EP12', 'Hindi Dubbed Thriller'...
       </marquee>
     </div>
   </div>
 
-  <!-- Search -->
+  <!-- Search Section -->
   <div class="search-section">
-    <form onsubmit="return false;">
-      <div class="search-wrapper">
-        <input type="text" id="movieSearch" placeholder="আপনার পছন্দের মুভির নাম লিখুন..." />
-        <button type="submit" onclick="searchMovie()">খুঁজুন</button>
-      </div>
-    </form>
-    <div id="search-result"></div>
+    <div class="search-box">
+      <input type="text" id="movieSearch" placeholder="মুভির নাম লিখুন..." />
+      <span class="search-icon">&#128269;</span>
+    </div>
+  </div>
+
+  <!-- Movie List -->
+  <div class="movie-list" id="movieList">
+    <div class="movie">Train to Busan</div>
+    <div class="movie">Parasite</div>
+    <div class="movie">Squid Game</div>
+    <div class="movie">Delhi Crime</div>
+    <div class="movie">Money Heist</div>
+    <div class="movie">The Silent Sea</div>
   </div>
 
   <script src="script.js"></script>
