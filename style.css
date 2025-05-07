@@ -147,6 +147,34 @@ header {
   background: #00ccbb;
 }
 
+/* Search Bar */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.search-bar {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.search-btn {
+  background-color: #00ffee;
+  color: #000;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #00ccbb;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
   .movie-grid {
