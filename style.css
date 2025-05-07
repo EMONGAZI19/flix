@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: 'Noto Sans Bengali', sans-serif;
+  background: linear-gradient(to bottom, #000000, #1a1a1a);
+  color: white;
+}
+
+header {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  box-shadow: 0 2px 5px #00ffee44;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffee;
+}
+
+.header-icons .icon {
+  font-size: 1.4rem;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.notice-bar {
+  background: #111;
+  color: #00ffee;
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  border-top: 1px solid #00ffee33;
+  border-bottom: 1px solid #00ffee33;
+}
+
+.notice-bar .label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+  gap: 15px;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider .slide {
+  min-width: 200px;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.slider .slide img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.slider .slide span {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.category-section {
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.category-section button {
+  background: #00ffee;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.movie-list {
+  padding: 20px;
+}
+
+.movie-list h2 {
+  text-align: center;
+  color: #00ffee;
+}
+
+.movie-list a {
+  color: #00ffee;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.movies img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ffee22;
+}
+
+.about {
+  text-align: center;
+  padding: 30px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  color: #aaa;
+}
