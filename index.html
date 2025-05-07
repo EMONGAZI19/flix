@@ -4,54 +4,70 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Drama World</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Header -->
-  <header class="main-header">
+  <header>
     <div class="logo">My Drama World</div>
-    <div class="menu-icon" id="menuToggle">&#9776;</div>
-  </header>
-
-  <!-- Navigation Menu -->
-  <nav class="nav-menu" id="navMenu">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Movie Request</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">About Us</a></li>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul class="menu" id="menu">
+      <li><a href="#">হোম</a></li>
+      <li><a href="#">মুভি রিকুয়েস্ট</a></li>
+      <li><a href="#">যোগাযোগ</a></li>
+      <li><a href="#">প্রাইভেসি পলিসি</a></li>
+      <li><a href="#">আমাদের সম্পর্কে</a></li>
     </ul>
-  </nav>
+  </header>
 
   <!-- Notice Bar -->
   <div class="notice-bar">
-    <div class="notice-label">Notice:</div>
+    <div class="notice-label">নোটিশ:</div>
     <div class="notice-marquee">
       <marquee behavior="scroll" direction="left" scrollamount="5">
-        নতুন মুভি প্রতিদিন আপডেট করা হয়! আমাদের ওয়েবসাইট এবং চ্যানেল ফলো করুন! আজকের আপলোড: 'New Korean Drama EP12', 'Hindi Dubbed Thriller', আরও চেক করুন...
+        নতুন মুভি প্রতিদিন আপডেট করা হয়! আজকের আপলোড: 'New Korean Drama EP12', 'Hindi Dubbed Thriller', আরও চেক করুন...
       </marquee>
     </div>
   </div>
 
-  <!-- Script to toggle and close menu -->
-  <script>
-    const menuToggle = document.getElementById('menuToggle');
-    const navMenu = document.getElementById('navMenu');
+  <!-- Search -->
+  <div class="search-section">
+    <input type="text" id="movieSearch" placeholder="মুভির নাম লিখুন..." />
+  </div>
 
-    menuToggle.addEventListener('click', (e) => {
-      e.stopPropagation();
-      navMenu.classList.toggle('active');
-    });
+  <!-- Movie Slider -->
+  <div class="slider-container">
+    <button class="slider-btn left" onclick="slideLeft()">&#10094;</button>
+    <div class="slider" id="movieSlider">
+      <a href="movie1.html" class="slide-item">
+        <img src="https://via.placeholder.com/160x220?text=Movie+1" alt="Movie 1">
+        <p>Train to Busan</p>
+      </a>
+      <a href="movie2.html" class="slide-item">
+        <img src="https://via.placeholder.com/160x220?text=Movie+2" alt="Movie 2">
+        <p>Parasite</p>
+      </a>
+      <a href="movie3.html" class="slide-item">
+        <img src="https://via.placeholder.com/160x220?text=Movie+3" alt="Movie 3">
+        <p>Squid Game</p>
+      </a>
+      <a href="movie4.html" class="slide-item">
+        <img src="https://via.placeholder.com/160x220?text=Movie+4" alt="Movie 4">
+        <p>Delhi Crime</p>
+      </a>
+      <a href="movie5.html" class="slide-item">
+        <img src="https://via.placeholder.com/160x220?text=Movie+5" alt="Movie 5">
+        <p>Money Heist</p>
+      </a>
+      <a href="movie6.html" class="slide-item">
+        <img src="https://via.placeholder.com/160x220?text=Movie+6" alt="Movie 6">
+        <p>The Silent Sea</p>
+      </a>
+    </div>
+    <button class="slider-btn right" onclick="slideRight()">&#10095;</button>
+  </div>
 
-    // Hide menu when clicking outside
-    document.addEventListener('click', (e) => {
-      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-        navMenu.classList.remove('active');
-      }
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
