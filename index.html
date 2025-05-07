@@ -12,8 +12,19 @@
   <!-- Header -->
   <header class="main-header">
     <div class="logo">My Drama World</div>
-    <div class="menu">মেনু</div>
+    <div class="menu-icon" id="menuToggle">&#9776;</div>
   </header>
+
+  <!-- Navigation Menu -->
+  <nav class="nav-menu" id="navMenu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Movie Request</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </nav>
 
   <!-- Notice Bar -->
   <div class="notice-bar">
@@ -25,5 +36,13 @@
     </div>
   </div>
 
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
