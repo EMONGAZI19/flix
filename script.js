@@ -3,12 +3,13 @@ function toggleMenu() {
   menu.classList.toggle('show');
 }
 
-function slideRight() {
-  const slider = document.getElementById('movieSlider');
-  slider.scrollBy({ left: 200, behavior: 'smooth' });
-}
+function searchMovie() {
+  const input = document.getElementById('movieSearch').value.trim();
+  const resultDiv = document.getElementById('search-result');
 
-function slideLeft() {
-  const slider = document.getElementById('movieSlider');
-  slider.scrollBy({ left: -200, behavior: 'smooth' });
+  if (input.length > 0) {
+    resultDiv.textContent = `'${input}' এর জন্য অনুসন্ধান চলছে...`;
+  } else {
+    resultDiv.textContent = "অনুগ্রহ করে মুভির নাম লিখুন।";
+  }
 }
