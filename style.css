@@ -73,13 +73,30 @@ header {
 }
 
 .search-section input {
-  width: 90%;
+  width: 70%;
   max-width: 400px;
   padding: 10px;
-  border-radius: 25px;
+  border-radius: 25px 0 0 25px;
   border: none;
   outline: none;
   font-size: 1rem;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  border: none;
+  background: #00ffee;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #00ffee55;
+}
+
+.search-btn:hover {
+  background: #00ccbb;
 }
 
 .slider-container {
@@ -88,12 +105,15 @@ header {
   margin: 30px 20px;
 }
 
+.slider-wrapper {
+  overflow: hidden;
+}
+
 .slider {
   display: flex;
   transition: transform 0.5s ease;
   gap: 20px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
+  width: max-content;
 }
 
 .slide-item {
