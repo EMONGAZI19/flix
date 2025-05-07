@@ -31,14 +31,44 @@
     </div>
   </div>
 
-  <!-- Search Section -->
-  <div class="search-section">
-    <form class="search-box" onsubmit="return false;">
-      <input type="text" id="movieSearch" placeholder="মুভির নাম লিখুন..." />
-      <button type="submit"><span>&#128269;</span></button>
-    </form>
+  <!-- Movie Loader Section -->
+  <div class="movie-section">
+    <h2>Latest Movies</h2>
+    <div id="latestMovies" class="movie-grid"></div>
+    <button class="see-all" onclick="showAll('latestMovies')">See All</button>
   </div>
 
+  <div class="movie-section">
+    <h2>Bangla Movies</h2>
+    <div id="banglaMovies" class="movie-grid"></div>
+    <button class="see-all" onclick="showAll('banglaMovies')">See All</button>
+  </div>
+
+  <div class="movie-section">
+    <h2>Hindi Dubbed Movies</h2>
+    <div id="hindiDubbedMovies" class="movie-grid"></div>
+    <button class="see-all" onclick="showAll('hindiDubbedMovies')">See All</button>
+  </div>
+
+  <div class="movie-section">
+    <h2>Hollywood Movies</h2>
+    <div id="hollywoodMovies" class="movie-grid"></div>
+    <button class="see-all" onclick="showAll('hollywoodMovies')">See All</button>
+  </div>
+
+  <div class="movie-section">
+    <h2>Bangla Dubbed Movies</h2>
+    <div id="banglaDubbedMovies" class="movie-grid"></div>
+    <button class="see-all" onclick="showAll('banglaDubbedMovies')">See All</button>
+  </div>
+
+  <div class="movie-section">
+    <h2>Anime Movies</h2>
+    <div id="animeMovies" class="movie-grid"></div>
+    <button class="see-all" onclick="showAll('animeMovies')">See All</button>
+  </div>
+
+  <script src="movies.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
