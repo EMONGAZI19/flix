@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Drama World</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="/index.html" class="logo">My Drama World</a>
+    <div id="menuToggle" class="menu-icon">&#9776;</div>
+    <nav id="navMenu" class="nav-menu">
+      <a href="/index.html">Home</a>
+      <a href="/movie-request.html">Movie Request</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms & Conditions</a>
+      <a href="/about.html">About Us</a>
+    </nav>
+  </header>
+
+  <!-- Notice Bar -->
+  <div class="notice-bar">
+    <div class="notice-label">নোটিশ:</div>
+    <div class="notice-marquee">
+      <marquee behavior="scroll" direction="left" scrollamount="5">
+        নতুন মুভি প্রতিদিন আপডেট করা হয়! আজকের আপলোড: 'New Korean Drama EP12', 'Hindi Dubbed Thriller'...
+      </marquee>
+    </div>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" id="searchInput" class="search-bar" placeholder="মুভি খুঁজুন..." />
+    <button class="search-btn" onclick="searchMovie()">সার্চ</button>
+  </div>
+
+  <!-- Movie Loader Sections -->
+  <div class="movie-section">
+    <h2>Latest Movies</h2>
+    <div id="latestMovies" class="movie-grid"></div>
+    <button class="see-all" data-category="latestMovies" data-showing-all="false" onclick="toggleShow('latestMovies')">See All</button>
+  </div>
+
+  <div class="movie-section">
+    <h2>Bangla Movies</h2>
+    <div id="banglaMovies" class="movie-grid"></div>
+    <button class="see-all" data-category="banglaMovies" data-showing-all="false" onclick="toggleShow('banglaMovies')">See All</button>
+  </div>
+
+  <div class="movie-section">
+    <h2>Hindi Dubbed Movies</h2>
+    <div id="hindiDubbedMovies" class="movie-grid"></div>
+    <button class="see-all" data-category="hindiDubbedMovies" data-showing-all="false" onclick="toggleShow('hindiDubbedMovies')">See All</button>
+  </div>
+
+  <div class="movie-section">
+    <h2>Hollywood Movies</h2>
+    <div id="hollywoodMovies" class="movie-grid"></div>
+    <button class="see-all" data-category="hollywoodMovies" data-showing-all="false" onclick="toggleShow('hollywoodMovies')">See All</button>
+  </div>
+
+  <div class="movie-section">
+    <h2>Bangla Dubbed Movies</h2>
+    <div id="banglaDubbedMovies" class="movie-grid"></div>
+    <button class="see-all" data-category="banglaDubbedMovies" data-showing-all="false" onclick="toggleShow('banglaDubbedMovies')">See All</button>
+  </div>
+
+  <div class="movie-section">
+    <h2>Anime Movies</h2>
+    <div id="animeMovies" class="movie-grid"></div>
+    <button class="see-all" data-category="animeMovies" data-showing-all="false" onclick="toggleShow('animeMovies')">See All</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="movies.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 My Drama World. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="/privacy-policy.html">Privacy Policy</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/about.html">About Us</a>
+    </div>
+  </footer>
+</body>
+</html>
